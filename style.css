@@ -120,6 +120,11 @@ footer > div > p > a {
 
 }
 
+.matecito {
+    margin-bottom: -4px;
+    width: 20px;
+}
+
 .logos > img {
     width: 120px;
 }
