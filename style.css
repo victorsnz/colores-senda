@@ -7,12 +7,10 @@
     margin:0;
     padding:0;
     font-family: 'Lato', sans-serif;
-    /* border-style: dotted; */
 }
 html {
     min-height: 100%;
     position: relative;
-    /* border-color: red; */
 }
 
 body{
@@ -29,7 +27,7 @@ header {
     display: flex;
     flex-direction: row;
 }
-.logo {    
+.logo {
     flex: 10%;
     margin: 0;
     background-position: center;
@@ -64,27 +62,19 @@ header {
 .container{
     height: 100%;
     display: flex;
-    justify-content: center;    
-}
-
-.main-table {
-    background-color: #edc988;
-    margin: 2%;
-    width: 40%;
-    min-width: 500px;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: gray;
-    border-width: 1px;
-    padding: 20px 0px 11px 0px;
-    display: flex;
     justify-content: center;
 }
 
 table {
     border-collapse: collapse;
+    background-color: #edc988;
     color: #132743;
     width: 80%;
+    border-radius: 20px;
+    margin: 0px 10% 0px 10%;
+    align-items: center;
+    justify-content: center;
+
 }
 
 thead {
@@ -108,7 +98,7 @@ footer {
     align-items: center;
     color: white;
     background-color: #799351;
-    
+
 }
 
 footer > div > p {
@@ -128,6 +118,93 @@ footer > div > p > a {
 .logos > img {
     width: 120px;
 }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 610px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #799351;
+  color: white;
+}
+
+.modal-body {
+    padding-left: 33px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-photo {
+  background-color: #799351;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/* ////////////////////////// */
 
 @media (max-width: 600px) {
     html {
@@ -168,25 +245,16 @@ footer > div > p > a {
     }
 
     .container {
-        /* margin: 0; */
         width: 100%;
-        /* flex-direction: column; */
         display: flex;
         justify-content: center;
     }
 
-    .main-table {
-        display: flex;
-        justify-content: center;
-        /* margin: 0; */
-        margin-top: 20px;
-        width: 100%;
-        max-width: 600px;
-        min-width: 280px;
-    }
     table {
-        width: 400px;
+        width: 100%;
         min-width: 280px;
+        margin-top: 20px;
+
     }
 
     footer {
@@ -195,6 +263,7 @@ footer > div > p > a {
         width: 100%;
         position: absolute;
     }
+
     .logos > img {
         width: 100px;
     }
