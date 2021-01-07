@@ -19,6 +19,8 @@ html {
     position: relative;
 }
 body{
+    background: url(./img/textures/vintage01.png);
+    background-size: 100%;
     align-items: center;
     background-color: var(--blanquito);
     margin: 0;
@@ -28,7 +30,10 @@ body{
 header {
     height: 160px;
     color: var(--naranja);
+    background: url(./img/textures/vintage01.png);
+    background-size: 100%;
     background-color: var(--verdoso);
+    
     display: flex;
     flex-direction: row;
 }
@@ -36,7 +41,7 @@ header {
 #logo-wrapper {
     position: absolute;
     top: 30px;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
 }
 #logo {
@@ -63,6 +68,8 @@ header {
 
 table {
     border-collapse: collapse;
+    background: url(./img/textures/vintage01.png);
+    background-size: 100%;
     background-color: var(--naranja);
     color: #132743;
     width: 50%;
