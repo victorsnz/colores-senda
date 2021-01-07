@@ -73,9 +73,7 @@ table {
 
 }
 
-thead {
-    color: #132743;
-}
+thead { color: #132743; }
 
 td, th {
     border-bottom:#132743 1px solid;
@@ -197,37 +195,40 @@ footer > div > p > a {
 }
 
 
-/* ////////////////////////// */
+/* //////////// MOBILE //////////// */
 
-@media (max-width: 600px) {
-    html {
-        width: 500px;
-    }
-    body {
+@media (max-width: 900px) {
+    table {
+        margin-left: 10px;
+        margin-right: 10px;
         width: 100%;
+        min-width: 500px !important;
+        /* margin-top: 20px; */
     }
+}
 
-    header{
+ @media (max-width: 700px) {
+    html { width: 100%; }
+
+    header { width: 100%; }
+
+    #logo-wrapper {
+       display: flex;
+       align-content: center;
         margin: 0;
-        padding: 0;
+        padding: 0; 
+        width: 97%;
+        border-style: dotted;
+        border-color: lawngreen;
     }
-
-    /* .header-container {
-        margin: 0;
-        padding: 5px;
-        width: 100%;
-    } */
 
     #logo {
-        background-size: 100px;
-        background-repeat: no-repeat;
-        background-color:  #edc988;
-        width: 80px;
-        height: 80px;
-        min-width: 80px;
-        min-height: 80px;
-        max-width: 80px;
-        min-height: 80px;
+        position: relative;
+        align-self: center;
+        margin: 0;
+        margin-top: 25px;
+        margin-left: 35%; 
+        width: 150px;
     }
 
     .main-title {
@@ -244,10 +245,9 @@ footer > div > p > a {
     }
 
     table {
-        width: 100%;
+        width: 97%;
         min-width: 280px;
         margin-top: 20px;
-
     }
 
     footer {
@@ -257,7 +257,5 @@ footer > div > p > a {
         position: absolute;
     }
 
-    .logos > img {
-        width: 100px;
-    }
+    .logos > img { width: 100px; }
 }
