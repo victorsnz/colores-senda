@@ -218,8 +218,6 @@ footer > div > p > a {
         margin: 0;
         padding: 0; 
         width: 97%;
-        border-style: dotted;
-        border-color: lawngreen;
     }
 
     #logo {
@@ -258,4 +256,9 @@ footer > div > p > a {
     }
 
     .logos > img { width: 100px; }
+}
+
+@media (min-width: 100px) {
+    html { width: 100%; }
+    header { width: 100%; }
 }
