@@ -106,7 +106,9 @@ footer > div > p > a {
     text-decoration: none;
     color: black;
 }
-
+footer > div > p > a:hover {
+    color: var(--verdoso);
+}
 .matecito {
     margin-bottom: -4px;
     width: 20px;
