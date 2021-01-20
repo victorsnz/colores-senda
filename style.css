@@ -19,6 +19,7 @@ html {
     position: relative;
 }
 body{
+    width: auto;
     background: url(./img/textures/vintage01.png);
     background-size: 100%;
     align-items: center;
@@ -28,14 +29,12 @@ body{
 }
 
 header {
+    width: 100%;
     height: 160px;
     color: var(--naranja);
     background: url(./img/textures/vintage01.png);
     background-size: 100%;
     background-color: var(--verdoso);
-    
-    display: flex;
-    flex-direction: row;
 }
 
 #logo-wrapper {
@@ -51,19 +50,12 @@ header {
     width: 200px;
 }
 
-
 .main-title {
     align-items: center;
     width: 100%;
     font-size: 30px;
     text-align: center;
     position: absolute;
-}
-
-.container{
-    height: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 table {
@@ -79,7 +71,10 @@ table {
     justify-content: center;
 }
 
-thead { color: #132743; }
+thead { 
+    color: #132743;
+    font-weight: 600;
+}
 
 td, th {
     border-bottom:#132743 1px solid;
@@ -207,16 +202,22 @@ footer > div > p > a:hover {
 
 @media (max-width: 900px) {
     table {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
         width: 100%;
-        min-width: 500px !important;
-        /* margin-top: 20px; */
+        min-width: 350px;
     }
+    .modal-content { width: 350px; }
+    
+    #my-modalbody > img { 
+        width: 340px;
+        object-fit: contain; 
+    }
+    
 }
 
  @media (max-width: 700px) {
-    html { width: 100%; }
+    html { width: 100vw; }
 
     header { width: 100%; }
 
@@ -238,24 +239,26 @@ footer > div > p > a:hover {
     }
 
     .main-title {
-        margin: 0;
+        margin: 0px;
+        margin-top: 5px;
         padding-left: 5px;
-        font-size: 15px;
+        font-size: 12px;
         text-align: center;
     }
 
-    .container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
     table {
-        width: 97%;
-        min-width: 280px;
-        margin-top: 20px;
+        margin-top: 10px;
+        font-size: 12px;
+        width: 300px;
     }
 
+    td, th{
+        padding: 5px;
+        max-width: 300px;
+    }
+    
+    tbody { width: 200px; }
+    
     footer {
         left: 0;
         bottom: 0;
